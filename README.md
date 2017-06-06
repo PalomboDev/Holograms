@@ -1,5 +1,5 @@
 # Holograms
-Simple hologram api
+Simple hologram api w/ command
 
 # Installation:
     Option 1:
