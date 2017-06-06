@@ -3,6 +3,7 @@ package me.palombo.holograms.hologram;
 import me.palombo.holograms.Holograms;
 import me.palombo.holograms.module.Module;
 import me.palombo.holograms.update.TickEvent;
+import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 import org.bukkit.event.EventHandler;
@@ -34,7 +35,7 @@ public class HologramManager extends Module {
     }
 
     public Hologram spawnHologram(Location loc, String text){
-        Hologram h = new Hologram(loc, text);
+        Hologram h = new Hologram(loc, ChatColor.translateAlternateColorCodes('&', text));
         holograms.add(h);
         return h;
     }

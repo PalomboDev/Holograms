@@ -1,7 +1,6 @@
 package me.palombo.holograms.hologram;
 
 import me.palombo.holograms.command.CommandBase;
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 public class HologramTestCmd extends CommandBase<HologramManager> {
@@ -22,7 +21,7 @@ public class HologramTestCmd extends CommandBase<HologramManager> {
             }
             text = text.trim();
 
-            getModule().spawnHologram(player.getLocation(), ChatColor.translateAlternateColorCodes('&', text));
+            getModule().spawnHologram(player.getLocation(), text);
             player.sendMessage("§7Spawned hologram: " + text + "§7.");
         }
     }
